@@ -120,12 +120,12 @@ const Portfolio = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-lg">
+              <p className="text-lg text-center">
                 I'm a passionate full-stack developer with expertise in both traditional web development
                 and blockchain technologies. With years of experience building scalable applications,
                 I bring ideas to life through clean code and innovative solutions.
               </p>
-              <p className="text-lg">
+              <p className="text-lg text-center">
                 Currently focused on creating decentralized applications and exploring the intersection
                 of Web2 and Web3 technologies to build the future of the internet.
               </p>
