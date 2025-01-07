@@ -96,9 +96,9 @@ const Portfolio = () => {
             Crafting Web2 & Web3 Experiences
           </p>
           <div className="flex justify-center space-x-6">
-            <a href="#contact" className="bg-white text-blue-600 px-8 py-3 rounded-full font-medium 
-              hover:bg-blue-50 transition-all transform hover:scale-105">
-              Get in Touch
+            <a href={`#tech-stack`} className="border-2 border-white text-white px-8 py-3 rounded-full 
+              font-medium hover:bg-white/10 transition-all transform hover:scale-105">
+              Tech Stack
             </a>
             <a href="#projects" className="border-2 border-white text-white px-8 py-3 rounded-full 
               font-medium hover:bg-white/10 transition-all transform hover:scale-105">
