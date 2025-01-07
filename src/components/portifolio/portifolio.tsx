@@ -39,7 +39,7 @@ const Portfolio = () => {
     <div className="relative">
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${isVisible ? 'top-0' : '-top-20'} 
-        ${activeSection === 'hero' ? ' bg-black/10 text-white' : 'bg-white/90 backdrop-blur-md text-gray-800 shadow-lg'}`}>
+        ${activeSection === 'hero' ? ' bg-black/10 text-white' : 'dark:bg-black/90 bg-white/90  backdrop-blur-md dark:text-gray-300 text-gray-800 shadow-lg'}`}>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between h-20">
             <div className="flex items-center">
@@ -69,13 +69,13 @@ const Portfolio = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden absolute w-full bg-white/90 backdrop-blur-md">
+          <div className="md:hidden absolute w-full bg-white/90 dark:bg-black/90 dark:text-gray-300 backdrop-blur-md rounded-xl my-1">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {['About', 'Projects', 'Tech Stack', 'Contact'].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(' ', '-')}`}
-                  className="block px-3 py-2 text-gray-800 hover:text-blue-500"
+                  className="block px-3 py-2 hover:text-blue-500"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item}
@@ -93,7 +93,7 @@ const Portfolio = () => {
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
         <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-            Full Stack Developer
+            I Am Kaleb, A Full Stack Developer
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-12 animate-fade-in-delay">
             Crafting Web2 & Web3 Experiences
@@ -115,7 +115,7 @@ const Portfolio = () => {
       {/* About Section */}
       <section id="about" className="min-h-screen flex items-center justify-center relative">
         <div className="max-w-4xl mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold text-center mb-12 relative text-teal-500 p-1">
+          <h2 className="text-4xl font-bold text-center mb-12 relative dark:text-teal-500 p-1">
             About Me
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -146,12 +146,12 @@ const Portfolio = () => {
       {/* Projects Section */}
       <section id="projects" className="min-h-screen flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold text-center mb-16 relative text-teal-500 p-1">
+          <h2 className="text-4xl font-bold text-center mb-16 relative dark:text-teal-500 p-1">
             Featured Projects
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <div key={index} className="bg-gray-800 rounded-lg p-6 transform hover:scale-105 
+              <div key={index} className="dark:bg-gray-800 shadow-xl rounded-lg p-6 transform hover:scale-105 
                 transition-all duration-300 hover:shadow-xl">
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
                 <p className="text-gray-400 mb-4">{project.description}</p>
@@ -173,16 +173,16 @@ const Portfolio = () => {
 
       {/* Tech Stack Section */}
       <section id="tech-stack" className="min-h-screen flex items-center justify-center">
-        <div className="max-w-7xl mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold text-center mb-16 relative text-teal-500 p-1">
+        <div className=" mx-auto px-4 py-20 w-full">
+          <h2 className="text-4xl font-bold text-center mb-16 relative dark:text-teal-500 p-1">
             Tech Stack
           </h2>
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {Object.entries(techStack).map(([category, technologies]) => (
-              <div key={category} className="bg-gray-800 p-6 rounded-lg transform hover:scale-105 
-                transition-all duration-300 hover:shadow-lg">
-                <h3 className="text-xl font-semibold mb-6 text-gray-400">{category}</h3>
-                <ul className="space-y-3">
+              <div key={category} className="dark:bg-gray-800 shadow-xl p-6 rounded-lg transform hover:scale-105 
+                transition-all duration-300 hover:shadow-lg w-full">
+                <h3 className="text-xl font-semibold mb-6 text-center">{category}</h3>
+                <ul className="space-x-3 flex justify-center flex-wrap">
                   {technologies.map((tech, index) => (
                     <li key={index} className="flex items-center text-blue-400">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
