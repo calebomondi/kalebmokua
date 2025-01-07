@@ -1,16 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Twitter, Mail, ExternalLink, ChevronDown } from 'lucide-react';
-
-interface Project {
-  title: string;
-  description: string;
-  tech: string[];
-  link: string;
-}
-
-interface TechStack {
-  [category: string]: string[];
-}
+import { projects, techStack } from './data';
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,39 +33,11 @@ const Portfolio = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const projects: Project[] = [
-    {
-      title: "DeFi Dashboard",
-      description: "A comprehensive dashboard for tracking DeFi investments and yields across multiple chains",
-      tech: ["React", "Ethers.js", "Web3.js", "Tailwind"],
-      link: "#"
-    },
-    {
-      title: "NFT Marketplace",
-      description: "Full-stack NFT marketplace with minting and trading capabilities",
-      tech: ["Next.js", "Solidity", "IPFS", "MongoDB"],
-      link: "#"
-    },
-    {
-      title: "Smart Contract Analytics",
-      description: "Real-time analytics platform for smart contract interactions",
-      tech: ["React", "GraphQL", "The Graph", "ChartJS"],
-      link: "#"
-    }
-  ];
-
-  const techStack: TechStack = {
-    "Frontend": ["React", "Next.js", "Tailwind CSS", "TypeScript"],
-    "Backend": ["Node.js", "Express", "MongoDB", "PostgreSQL"],
-    "Blockchain": ["Solidity", "Web3.js", "Ethers.js", "Hardhat"],
-    "Tools": ["Git", "Docker", "AWS", "Vercel"]
-  };
-
   return (
     <div className="relative">
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${isVisible ? 'top-0' : '-top-20'} 
-        ${activeSection === 'hero' ? 'bg-transparent text-white' : 'bg-white/90 backdrop-blur-md text-gray-800 shadow-lg'}`}>
+        ${activeSection === 'hero' ? ' bg-black/10 text-white' : 'bg-white/90 backdrop-blur-md text-gray-800 shadow-lg'}`}>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between h-20">
             <div className="flex items-center">
