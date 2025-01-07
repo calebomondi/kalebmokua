@@ -95,13 +95,13 @@ const Portfolio = () => {
           <p className="text-xl md:text-2xl text-white/90 mb-12 animate-fade-in-delay">
             Crafting Web2 & Web3 Experiences
           </p>
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-center space-y-2 md:space-y-0 md:space-x-6 flex-col md:flex-row">
             <a href={`#tech-stack`} className="border-2 border-white text-white px-8 py-3 rounded-full 
-              font-medium hover:bg-white/10 transition-all transform hover:scale-105">
+              font-medium hover:bg-white/10 transition-all transform hover:scale-105 md:w-1/4">
               Tech Stack
             </a>
             <a href="#projects" className="border-2 border-white text-white px-8 py-3 rounded-full 
-              font-medium hover:bg-white/10 transition-all transform hover:scale-105">
+              font-medium hover:bg-white/10 transition-all transform hover:scale-105 md:w-1/4">
               View Projects
             </a>
           </div>
