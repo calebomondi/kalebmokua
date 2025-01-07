@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Twitter, Mail, ExternalLink, ChevronDown } from 'lucide-react';
 import { projects, techStack } from './data';
 
+import me from '/kalebmokua.jpg'
+
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
@@ -49,8 +51,8 @@ const Portfolio = () => {
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(' ', '-')}`}
-                  className={`transition-all duration-300 hover:text-blue-500 relative after:content-[''] after:absolute after:w-0 after:h-0.5 
-                    after:bg-blue-500 after:left-0 after:bottom-0 after:transition-all hover:after:w-full 
+                  className={`transition-all duration-300  relative after:content-[''] after:absolute after:w-0 after:h-0.5 
+                    after:bg-teal-600 after:left-0 after:bottom-0 after:transition-all hover:after:w-full 
                     ${activeSection === item.toLowerCase().replace(' ', '-') ? 'after:w-full' : ''}`}
                 >
                   {item}
@@ -86,6 +88,7 @@ const Portfolio = () => {
 
       {/* Hero Section */}
       <section id="hero" className="h-screen flex items-center justify-center relative overflow-hidden 
+        dark:from-gray-900 dark:via-green-900 dark:to-blue-900
         bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500">
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
         <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
@@ -110,38 +113,41 @@ const Portfolio = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="min-h-screen flex items-center justify-center bg-gray-50 relative">
+      <section id="about" className="min-h-screen flex items-center justify-center relative">
         <div className="max-w-4xl mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold text-center mb-12 relative">
+          <h2 className="text-4xl font-bold text-center mb-12 relative text-teal-500 p-1">
             About Me
-            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500"></span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-lg text-gray-700">
+              <p className="text-lg">
                 I'm a passionate full-stack developer with expertise in both traditional web development
                 and blockchain technologies. With years of experience building scalable applications,
                 I bring ideas to life through clean code and innovative solutions.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg">
                 Currently focused on creating decentralized applications and exploring the intersection
                 of Web2 and Web3 technologies to build the future of the internet.
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-square rounded-full bg-gradient-to-br from-blue-500 to-purple-500 
-                animate-pulse"></div>
+              <div className="aspect-square rounded-full bg-gradient-to-br from-blue-500 to-purple-500 border border-teal-500">
+                <img 
+                  src={me} 
+                  alt="" 
+                  className='rounded-full'
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+      <section id="projects" className="min-h-screen flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold text-center mb-16 relative">
+          <h2 className="text-4xl font-bold text-center mb-16 relative text-teal-500 p-1">
             Featured Projects
-            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500"></span>
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {projects.map((project, index) => (
@@ -166,20 +172,19 @@ const Portfolio = () => {
       </section>
 
       {/* Tech Stack Section */}
-      <section id="tech-stack" className="min-h-screen flex items-center justify-center bg-white">
+      <section id="tech-stack" className="min-h-screen flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold text-center mb-16 relative">
+          <h2 className="text-4xl font-bold text-center mb-16 relative text-teal-500 p-1">
             Tech Stack
-            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500"></span>
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
             {Object.entries(techStack).map(([category, technologies]) => (
-              <div key={category} className="bg-gray-50 p-6 rounded-lg transform hover:scale-105 
+              <div key={category} className="bg-gray-800 p-6 rounded-lg transform hover:scale-105 
                 transition-all duration-300 hover:shadow-lg">
-                <h3 className="text-xl font-semibold mb-6 text-blue-600">{category}</h3>
+                <h3 className="text-xl font-semibold mb-6 text-gray-400">{category}</h3>
                 <ul className="space-y-3">
                   {technologies.map((tech, index) => (
-                    <li key={index} className="flex items-center text-gray-700">
+                    <li key={index} className="flex items-center text-blue-400">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                       {tech}
                     </li>
@@ -193,6 +198,7 @@ const Portfolio = () => {
 
       {/* Contact Section */}
       <section id="contact" className="min-h-screen flex items-center justify-center 
+        dark:from-green-900 dark:to-blue-900
         bg-gradient-to-br from-blue-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 py-20 text-center">
           <h2 className="text-4xl font-bold mb-8">Get in Touch</h2>
