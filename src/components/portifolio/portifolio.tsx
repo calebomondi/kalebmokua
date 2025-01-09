@@ -3,6 +3,7 @@ import { Menu, X, Github, Linkedin, Twitter, Mail, ExternalLink, ChevronDown } f
 import { projects, techStack } from './data';
 
 import me from '/kalebmokua.jpg'
+import logo from '/kaleblogo.png'
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,11 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between h-20">
             <div className="flex items-center">
-              <span className="text-2xl font-semibold font-mono">mokuakaleb</span>
+              <img 
+                src={logo} 
+                alt=""
+                className='w-36' 
+              />
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
