@@ -101,7 +101,7 @@ const Portfolio = () => {
           <div className="flex justify-center space-y-2 md:space-y-0 md:space-x-6 flex-col md:flex-row">
             <a href={`#tech-stack`} className="border-2 border-white text-white px-8 py-3 rounded-full 
               font-medium hover:bg-white/10 transition-all transform hover:scale-105 md:w-1/4">
-              Tech Stack
+              My Tech Stack
             </a>
             <a href="#projects" className="border-2 border-white text-white px-8 py-3 rounded-full 
               font-medium hover:bg-white/10 transition-all transform hover:scale-105 md:w-1/4">
@@ -113,25 +113,23 @@ const Portfolio = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="min-h-screen flex items-center justify-center relative">
-        <div className="max-w-4xl mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold text-center mb-12 relative dark:text-teal-500 p-1">
-            About Me
+      <section id="about" className="h-auto flex items-center justify-center relative">
+        <div className="max-w-4xl mx-auto px-4 py-10">
+          <h2 className="text-4xl font-bold text-center mb-12 relative dark:text-teal-600 p-1">
+            Who Am I?
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-center">
-                I'm a passionate full-stack developer with expertise in both traditional web development
-                and blockchain technologies. With years of experience building scalable applications,
-                I bring ideas to life through clean code and innovative solutions.
+              I am passionate software developer with a knack for building innovative solutions that merge technology with real-world impact. With a solid foundation in IT and software development, I specialize in Web2 and Web3 in decentralized applications (dApps).
+              Over the years, I have honed my skills in blockchain development, smart contract programming using Solidity, and front-end frameworks like ReactJS, NextJS and TypeScript. My expertise extends to working with tools like Hardhat and platforms like Supabase, allowing me to create scalable and user-friendly applications.
               </p>
               <p className="text-lg text-center">
-                Currently focused on creating decentralized applications and exploring the intersection
-                of Web2 and Web3 technologies to build the future of the internet.
+              When I’m not building software, you’ll often find me exploring new tech frameworks, participating in developer bootcamps, or brainstorming ways to solve real-world challenges with code.
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-square rounded-full bg-gradient-to-br from-blue-500 to-purple-500 border border-teal-500">
+              <div className="aspect-square rounded-full bg-gradient-to-br from-blue-500 to-purple-500 border border-teal-700">
                 <img 
                   src={me} 
                   alt="" 
@@ -144,9 +142,9 @@ const Portfolio = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="min-h-screen flex items-center justify-center">
-        <div className="max-w-7xl mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold text-center mb-16 relative dark:text-teal-500 p-1">
+      <section id="projects" className="h-auto flex items-center justify-center">
+        <div className="max-w-7xl mx-auto px-4 py-10">
+          <h2 className="text-4xl font-bold text-center mb-16 relative dark:text-teal-600 p-1">
             Featured Projects
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -154,7 +152,7 @@ const Portfolio = () => {
               <div key={index} className="dark:bg-gray-800 shadow-xl rounded-lg p-6 transform hover:scale-105 
                 transition-all duration-300 hover:shadow-xl">
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                <p className="text-gray-400 mb-4">{project.description}</p>
+                <p className="text-gray-400 mb-4 line-clamp-3">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, techIndex) => (
                     <span key={techIndex} className="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">
@@ -162,7 +160,7 @@ const Portfolio = () => {
                     </span>
                   ))}
                 </div>
-                <a href={project.link} className="flex items-center text-blue-400 hover:text-blue-300">
+                <a href={project.link} target="_blank" className="flex items-center text-blue-400 hover:text-blue-300">
                   View Project <ExternalLink size={16} className="ml-1" />
                 </a>
               </div>
@@ -172,9 +170,9 @@ const Portfolio = () => {
       </section>
 
       {/* Tech Stack Section */}
-      <section id="tech-stack" className="min-h-screen flex items-center justify-center">
-        <div className=" mx-auto px-4 py-20 w-full">
-          <h2 className="text-4xl font-bold text-center mb-16 relative dark:text-teal-500 p-1">
+      <section id="tech-stack" className="h-auto flex items-center justify-center">
+        <div className=" mx-auto px-4 py-10 w-full">
+          <h2 className="text-4xl font-bold text-center mb-16 relative dark:text-teal-600 p-1">
             Tech Stack
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -197,31 +195,31 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="min-h-screen flex items-center justify-center 
+      <section id="contact" className="h-auto flex items-center justify-center 
         dark:from-green-900 dark:to-blue-900
         bg-gradient-to-br from-blue-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 py-20 text-center">
-          <h2 className="text-4xl font-bold mb-8">Get in Touch</h2>
+          <h2 className="text-4xl font-bold mb-8">Let's Get in Touch</h2>
           <p className="text-xl text-white/90 mb-12">
             I'm always interested in hearing about new projects and opportunities.
           </p>
           <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
-            <a href="mailto:your.email@example.com" 
+            <a href="mailto:kalebmokua@gmail.com" 
               className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-3 
                 rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105">
               <Mail className="mr-2" size={20} />
               Send me an email
             </a>
             <div className="flex justify-center space-x-4">
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-white/20 
+              <a href="https://github.com/calebomondi" className="bg-white/10 p-3 rounded-full hover:bg-white/20 
                 transition-all transform hover:scale-110">
                 <Github size={24} />
               </a>
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-white/20 
+              <a href="https://www.linkedin.com/in/mokuakaleb/" className="bg-white/10 p-3 rounded-full hover:bg-white/20 
                 transition-all transform hover:scale-110">
                 <Linkedin size={24} />
               </a>
-              <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-white/20 
+              <a href="https://x.com/mokuakaleb" className="bg-white/10 p-3 rounded-full hover:bg-white/20 
                 transition-all transform hover:scale-110">
                 <Twitter size={24} />
               </a>
