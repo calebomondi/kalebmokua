@@ -20,7 +20,7 @@ const Portfolio = () => {
       lastScrollY = currentScrollY;
 
       // Update active section
-      const sections = ['hero', 'about', 'projects', 'tech-stack', 'contact'];
+      const sections = ['hero', 'about', 'experience', 'projects', 'tech-stack', 'contact'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -52,7 +52,7 @@ const Portfolio = () => {
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
-              {['About', 'Projects', 'Tech Stack', 'Contact'].map((item) => (
+              {['About', 'Experience', 'Projects', 'Tech Stack', 'Contact'].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(' ', '-')}`}
@@ -76,7 +76,7 @@ const Portfolio = () => {
         {isMenuOpen && (
           <div className="md:hidden absolute w-full bg-white/90 dark:bg-black/90 dark:text-gray-300 backdrop-blur-md rounded-xl my-1">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {['About', 'Projects', 'Tech Stack', 'Contact'].map((item) => (
+              {['About', 'Experience', 'Projects', 'Tech Stack', 'Contact'].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(' ', '-')}`}
@@ -147,7 +147,7 @@ const Portfolio = () => {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="h-auto flex items-center justify-center relative">
+      <section id="experience" className="h-auto flex items-center justify-center">
         <div className="max-w-4xl mx-auto px-4 py-10">
           <h2 className="text-4xl font-bold text-center mb-12 relative dark:text-teal-600 p-1">
             Experience
