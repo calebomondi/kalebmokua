@@ -1,4 +1,4 @@
-import { Project, TechStack } from '../../types';
+import { Project, TechStack, Experience } from '../../types';
 
 export const projects: Project[] = [
     {
@@ -37,11 +37,19 @@ export const projects: Project[] = [
       tech: ["Vanilla"],
       link: "https://calebomondi.github.io/rest-countries-api/"
     }
-  ];
+];
 
 export const techStack: TechStack = {
     "Frontend": ["React.js", "Next.js", "Tailwind CSS", "TypeScript"],
     "Backend": ["Node.js", "Express.js", "Django", "PostgreSQL", "MySQL"],
     "Blockchain": ["Solidity", "Web3.js", "Ethers.js", "Hardhat", "Wagmi", "The Graph"],
     "Tools": ["Git", "VS Code", "Github", "Vercel", "Supabase"]
-  };
+};
+
+export const experience: Experience[] = [
+  {
+    company: 'Zendawa Africa',
+    position: 'Software Engineering Intern',
+    description: "Zendawa is a healthcare SaaS company that offers a digital platform offering tele-pharmacy which enables neighborhood pharmacies to sell online and offer e-consultation. As a software engineering intern, I developed the zenrekods platform for clients to upload their medical records and sociostat for tracking Zendawa's social media post performance."
+  }
+]

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Twitter, Mail, ExternalLink, ChevronDown } from 'lucide-react';
-import { projects, techStack } from './data';
+import { projects, techStack, experience } from './data';
 
 import me from '/kalebmokua.jpg'
 import logo from '/kaleblogo.png'
@@ -142,6 +142,26 @@ const Portfolio = () => {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section id="experience" className="h-auto flex items-center justify-center relative">
+        <div className="max-w-4xl mx-auto px-4 py-10">
+          <h2 className="text-4xl font-bold text-center mb-12 relative dark:text-teal-600 p-1">
+            Experience
+          </h2>
+          <div className="">
+            {
+              experience.map(exp => (
+                <div className="space-y-2 p-3 m-2 dark:bg-gray-800 shadow-xl rounded-lg">
+                  <h3 className='text-2xl'>{exp.company}</h3>
+                  <p className=''>{exp.position}</p>
+                  <p className="text-lg">{exp.description}</p>
+                </div>
+              ))
+            }
           </div>
         </div>
       </section>
