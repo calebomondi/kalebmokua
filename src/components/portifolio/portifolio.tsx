@@ -156,7 +156,7 @@ const Portfolio = () => {
             {
               experience.map(exp => (
                 <div className="space-y-2 p-3 m-2 dark:bg-gray-800 shadow-xl rounded-lg">
-                  <h3 className='text-2xl'>{exp.company}</h3>
+                  <h3 className='text-2xl text-green-600'>{exp.company}</h3>
                   <p className=''>{exp.position}</p>
                   <p className="text-lg">{exp.description}</p>
                 </div>
