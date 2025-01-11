@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Twitter, Mail, ExternalLink, ChevronDown } from 'lucide-react';
-import { projects, techStack, experience } from './data';
+import { projects, techStack, experience, upcomingProjects } from './data';
 
 import me from '/kalebmokua.jpg'
 import logo from '/kaleblogo.png'
@@ -188,6 +188,30 @@ const Portfolio = () => {
                 <a href={project.link} target="_blank" className="flex items-center text-blue-400 hover:text-blue-300">
                   View Project <ExternalLink size={16} className="ml-1" />
                 </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="upcoming-projects" className="h-auto flex items-center justify-center">
+        <div className="max-w-7xl mx-auto px-4 py-10">
+          <h2 className="text-4xl font-bold text-center mb-16 relative dark:text-teal-600 p-1">
+            Currently Working On
+          </h2>
+          <div className="grid md:grid-cols-2 gap-7">
+            {upcomingProjects.map((project, index) => (
+              <div key={index} className="dark:bg-gray-800 shadow-xl rounded-lg p-6 transform hover:scale-105 
+                transition-all duration-300 hover:shadow-xl">
+                <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+                <p className="text-gray-400 mb-4 line-clamp-3">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tech.map((tech, techIndex) => (
+                    <span key={techIndex} className="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
