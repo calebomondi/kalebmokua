@@ -26,12 +26,6 @@ export const projects: Project[] = [
       link: "https://titandevs.vercel.app/"
     },
     {
-      title: "SocioStat",
-      description: "Sociostat is social media posts tracking and analyzing tool for Instagram and Facebook to enable businesses make data driven decisions.",
-      tech: ["Django","Supabase"],
-      link: "https://sociostat.vercel.app/"
-    },
-    {
       title: "CountryOpedia",
       description: "CountryOpedia uses the REST countries API to showcase all the countries in the world with their up-to-date facts and flags.",
       tech: ["Vanilla"],
