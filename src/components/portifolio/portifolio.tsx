@@ -74,7 +74,7 @@ const Portfolio = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden absolute w-full bg-white dark:bg-black dark:text-gray-300 backdrop-blur-md rounded-xl my-1">
+          <div className="md:hidden absolute w-full bg-white dark:bg-black dark:text-gray-300 text-gray-800 backdrop-blur-md rounded-xl my-1">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {['About', 'Experience', 'Projects', 'Tech Stack', 'Contact'].map((item) => (
                 <a
