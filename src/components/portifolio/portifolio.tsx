@@ -177,7 +177,7 @@ const Portfolio = () => {
               <div key={index} className="dark:bg-gray-800 shadow-xl rounded-lg p-6 transform hover:scale-105 
                 transition-all duration-300 hover:shadow-xl">
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                <p className="text-gray-400 mb-4 line-clamp-3">{project.description}</p>
+                <p className="text-gray-400 mb-4 line-clamp-5">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, techIndex) => (
                     <span key={techIndex} className="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">
@@ -204,7 +204,7 @@ const Portfolio = () => {
               <div key={index} className="dark:bg-gray-800 shadow-xl rounded-lg p-6 transform hover:scale-105 
                 transition-all duration-300 hover:shadow-xl">
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                <p className="text-gray-400 mb-4 line-clamp-3">{project.description}</p>
+                <p className="text-gray-400 mb-4 line-clamp-5">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, techIndex) => (
                     <span key={techIndex} className="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">
