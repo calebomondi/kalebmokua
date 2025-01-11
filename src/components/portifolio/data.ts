@@ -39,6 +39,21 @@ export const projects: Project[] = [
     }
 ];
 
+export const upcomingProjects: Project[] = [
+  {
+    title: "Attendeez-Tutor",
+    description: "Attendeez is the tutor version of attendeez which will be used by tutors to start and end class sessions and manage class attendance.",
+    tech: ["React.js", "Supabase", "Tailwind", "expressJS"],
+    link: ""
+  },
+  {
+    title: "OpenMRL Smart Contract",
+    description: "OpenMRL will be a blockchain-based electronic medical records system aimed at revolutionizing healthcare data management to ensure complete ownership by a patient.",
+    tech: ["Solidity", "Typescript"],
+    link: ""
+  },
+];
+
 export const techStack: TechStack = {
     "Frontend": ["React.js", "Next.js", "Tailwind CSS", "TypeScript"],
     "Backend": ["Node.js", "Express.js", "Django", "PostgreSQL", "MySQL"],
