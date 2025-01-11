@@ -126,7 +126,7 @@ const Portfolio = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-center">
-              I am passionate software developer with a knack for building innovative solutions that merge technology with real-world impact. With a solid foundation in IT and software development, I specialize in Web2 and Web3 in decentralized applications (dApps).
+              I am a passionate software developer with a knack for building innovative solutions that merge technology with real-world impact. With a solid foundation in IT and software development, I specialize in Web2 and Web3 in decentralized applications (dApps).
               Over the years, I have honed my skills in blockchain development, smart contract programming using Solidity, and front-end frameworks like ReactJS, NextJS and TypeScript. My expertise extends to working with tools like Hardhat and platforms like Supabase, allowing me to create scalable and user-friendly applications.
               </p>
               <p className="text-lg text-center">
