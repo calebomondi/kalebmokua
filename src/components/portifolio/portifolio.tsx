@@ -172,7 +172,7 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-16 relative dark:text-teal-600 p-1">
             Featured Projects
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-7">
             {projects.map((project, index) => (
               <div key={index} className="dark:bg-gray-800 shadow-xl rounded-lg p-6 transform hover:scale-105 
                 transition-all duration-300 hover:shadow-xl">
