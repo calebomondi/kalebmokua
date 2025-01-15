@@ -46,6 +46,12 @@ export const upcomingProjects: Project[] = [
     tech: ["Solidity", "Typescript"],
     link: ""
   },
+  {
+    title: "CarbonLedger Smart Contract",
+    description: "CarbonLedger will be a blockchain-based carbon offset funds distribution platform to communities and individuals that are leading the war in combating climate change.",
+    tech: ["Solidity", "Typescript"],
+    link: ""
+  },
 ];
 
 export const techStack: TechStack = {
