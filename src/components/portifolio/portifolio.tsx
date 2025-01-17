@@ -260,15 +260,15 @@ const Portfolio = () => {
               Send me an email
             </a>
             <div className="flex justify-center space-x-4">
-              <a href="https://github.com/calebomondi" className="bg-white/10 p-3 rounded-full hover:bg-white/20 
+              <a href="https://github.com/calebomondi" target="_blank" className="bg-white/10 p-3 rounded-full hover:bg-white/20 
                 transition-all transform hover:scale-110">
                 <Github size={24} />
               </a>
-              <a href="https://www.linkedin.com/in/mokuakaleb/" className="bg-white/10 p-3 rounded-full hover:bg-white/20 
+              <a href="https://www.linkedin.com/in/mokuakaleb/" target="_blank" className="bg-white/10 p-3 rounded-full hover:bg-white/20 
                 transition-all transform hover:scale-110">
                 <Linkedin size={24} />
               </a>
-              <a href="https://x.com/mokuakaleb" className="bg-white/10 p-3 rounded-full hover:bg-white/20 
+              <a href="https://x.com/mokuakaleb" target="_blank" className="bg-white/10 p-3 rounded-full hover:bg-white/20 
                 transition-all transform hover:scale-110">
                 <Twitter size={24} />
               </a>
