@@ -41,8 +41,15 @@ export const upcomingProjects: Project[] = [
     link: ""
   },
   {
-    title: "OpenMRL Smart Contract",
-    description: "OpenMRL will be a blockchain-based electronic medical records system aimed at revolutionizing healthcare data management to ensure complete ownership by a patient.",
+    title: "OpenHRL",
+    description: "OpenHRL is a blockchain-based electronic medical records system aimed at revolutionizing healthcare data management to ensure complete ownership by a patient.",
+    tech: ["Solidity", "Typescript"],
+    link: ""
+  }
+  ,
+  {
+    title: "FVKRY PRVNTA",
+    description: "FVKRY PRVNTA is a smart contract-powered vault system that helps digital assets holders build wealth through disciplined saving. Acts as a fixed deposit account for your digital assets, but with the flexibility needed for the crypto age.",
     tech: ["Solidity", "Typescript"],
     link: ""
   }
