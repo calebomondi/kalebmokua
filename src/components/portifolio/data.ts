@@ -35,8 +35,8 @@ export const projects: Project[] = [
 
 export const upcomingProjects: Project[] = [
   {
-    title: "Attendeez-Tutor",
-    description: "Attendeez is the tutor version of attendeez which will be used by tutors to start and end class sessions and manage class attendance and also to take class attendance.",
+    title: "Attendeez-Admin",
+    description: "Attendeez is the admin version of attendeez which will be used by department admins to oversee the operations of the platform, view general attendance and class sessions and generate comprehensive reports.",
     tech: ["React.js", "Supabase", "Tailwind", "expressJS"],
     link: ""
   },
