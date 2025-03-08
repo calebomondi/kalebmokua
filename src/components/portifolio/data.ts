@@ -4,13 +4,19 @@ export const projects: Project[] = [
     {
       title: "Undugu",
       description: "Undugu is blockchain-based charity donation platform that enables transparent, secure, and decentralized fundraising.",
-      tech: ["React.js", "Supabase", "Web3.js", "Tailwind"],
+      tech: ["React.js", "Supabase", "Web3.js", "TypeScript"],
       link: "https://undugu-beta.vercel.app/"
+    },
+    {
+      title: "Fvkry prvnta",
+      description: "FVKRY PRVNTA is a blockchain-based virtual assets and crypto locking platform that aims to enhance financial discipline and promote long-term saving among cryptocurrency and virtual asset owners.",
+      tech: ["React.js", "Solidity", "Wagmi/Viem", "TypeScript"],
+      link: "https://fvkry.vercel.app/"
     },
     {
       title: "Attendeez",
       description: "Attendeez is an automated class attendance taking system that leverages the use of QR codes for attendance sign in.",
-      tech: ["React.js", "Tailwind", "Supabase", "DaisyUI"],
+      tech: ["React.js", "TypeScript", "Supabase", "DaisyUI"],
       link: "https://attendeez.vercel.app/"
     },
     {
@@ -22,7 +28,7 @@ export const projects: Project[] = [
     {
       title: "TitanDevs",
       description: "TitanDevs is our university class group portifolio that we were to create for a certain group project and was used for presentation purposes.",
-      tech: ["React.js", "Tailwind", "DaisyUI"],
+      tech: ["React.js", "TypeScript", "DaisyUI"],
       link: "https://titandevs.vercel.app/"
     },
     {
@@ -35,22 +41,9 @@ export const projects: Project[] = [
 
 export const upcomingProjects: Project[] = [
   {
-    title: "Attendeez-Admin",
-    description: "Attendeez is the admin version of attendeez which will be used by department admins to oversee the operations of the platform, view general attendance and class sessions and generate comprehensive reports.",
-    tech: ["React.js", "Supabase", "Tailwind", "expressJS"],
-    link: ""
-  },
-  {
-    title: "OpenHRL",
-    description: "OpenHRL is a blockchain-based electronic medical records system aimed at revolutionizing healthcare data management to ensure complete ownership by a patient.",
-    tech: ["Solidity", "Typescript"],
-    link: ""
-  }
-  ,
-  {
     title: "FVKRY PRVNTA",
     description: "FVKRY PRVNTA is a smart contract-powered vault system that helps digital assets holders build wealth through disciplined saving. Acts as a fixed deposit account for your digital assets, but with the flexibility needed for the crypto age.",
-    tech: ["Solidity", "Typescript"],
+    tech: ["React.js", "Solidity", "Wagmi/Viem", "TypeScript"],
     link: ""
   }
 ];
@@ -58,8 +51,9 @@ export const upcomingProjects: Project[] = [
 export const techStack: TechStack = {
     "Frontend": ["React.js", "Next.js", "Tailwind CSS", "TypeScript"],
     "Backend": ["Node.js", "Express.js", "Django", "PostgreSQL", "MySQL"],
-    "Blockchain": ["Solidity", "Web3.js", "Ethers.js", "Hardhat", "Wagmi", "The Graph"],
-    "Tools": ["Git", "VS Code", "Github", "Vercel", "Supabase"]
+    "Containerization": ["Docker"],
+    "Blockchain": ["Solidity", "Ethers.js", "Hardhat", "Wagmi", "Viem","The Graph"],
+    "Tools": ["Git", "VS Code", "Github", "Vercel", "Supabase", "Remix", "Docker"],
 };
 
 export const experience: Experience[] = [
