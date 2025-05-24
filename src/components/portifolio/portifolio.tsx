@@ -127,10 +127,10 @@ const Portfolio = () => {
             <div className="space-y-6">
               <p className="text-lg text-center">
               I am a passionate software developer with a knack for building innovative solutions that merge technology with real-world impact. With a solid foundation in IT and software development, I specialize in Web2 and Web3 in decentralized applications (dApps).
-              Over the years, I have honed my skills in blockchain development, smart contract programming using Solidity, and front-end frameworks like ReactJS, NextJS and TypeScript. My expertise extends to working with tools like Hardhat and platforms like Supabase, allowing me to create scalable and user-friendly applications.
+              I have honed my skills in blockchain development, smart contract programming using Solidity, and front-end frameworks like ReactJS and NextJS with TypeScript. My expertise extends to working with tools like Hardhat and platforms like Supabase, allowing me to create scalable and user-friendly applications.
               </p>
               <p className="text-lg text-center">
-              When I’m not building software, you’ll often find me exploring new tech frameworks, participating in developer bootcamps, or brainstorming ways to solve real-world challenges with code.
+              When I’m not building software, you’ll often find me exploring new tech and brainstorming ways to solve real-world challenges with code.
               </p>
             </div>
             <div className="relative">
@@ -172,7 +172,7 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-16 relative dark:text-teal-600 p-1">
             Featured Projects
           </h2>
-          <div className="grid md:grid-cols-3 gap-7">
+          <div className="grid md:grid-cols-2 gap-7">
             {projects.map((project, index) => (
               <div key={index} className="dark:bg-gray-800 shadow-xl rounded-lg p-6 transform hover:scale-105 
                 transition-all duration-300 hover:shadow-xl">
