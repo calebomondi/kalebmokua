@@ -10,7 +10,7 @@ export const projects: Project[] = [
     {
       title: "FVP",
       description: "FVP is a financial management protocol that that enables digital asset holders to curb their impulsive spending behaviour and also promotes long-term saving in the Web3 space.",
-      tech: ["React.js", "Solidity", "Wagmi/Viem", "ExpressJS"],
+      tech: ["React.js", "Solidity", "Wagmi/Viem/EthersJS", "ExpressJS"],
       link: "https://fvp-fe.vercel.app/"
     },
     {
@@ -48,6 +48,6 @@ export const experience: Experience[] = [
   {
     company: 'Zendawa Africa',
     position: 'Software Engineering Intern',
-    description: "Zendawa is a healthcare SaaS company that offers a digital platform offering tele-pharmacy which enables neighborhood pharmacies to sell online and offer e-consultation. As a software engineering intern, I participated in the developement of the zenrekods platform for clients to upload their medical records and sociostat for tracking Zendawa's social media post performance."
+    description: "Zendawa is a healthcare SaaS company that offers a digital platform offering tele-pharmacy which enables neighborhood pharmacies to sell online and offer e-consultation. As a software engineering intern, I participated in the development of the zenrekods platform for clients to upload their medical records and sociostat for tracking Zendawa's social media post performance."
   }
 ]

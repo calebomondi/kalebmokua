@@ -40,7 +40,7 @@ const Portfolio = () => {
     <div className="relative">
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${isVisible ? 'top-0' : '-top-20'} 
-        ${activeSection === 'hero' ? ' bg-black/20 text-white' : 'dark:bg-black/90 bg-white/90  backdrop-blur-md dark:text-gray-300 text-gray-800 shadow-lg'}`}>
+        ${activeSection === 'hero' ? 'text-white' : 'dark:bg-black/90 bg-white/90  backdrop-blur-md dark:text-gray-300 text-gray-800 shadow-lg'}`}>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between h-20">
             <div className="flex items-center">
