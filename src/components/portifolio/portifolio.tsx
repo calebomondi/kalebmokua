@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Twitter, Mail, ExternalLink, ChevronDown } from 'lucide-react';
-import { projects, techStack, experience, upcomingProjects } from './data';
+import { projects, techStack, upcomingProjects } from './data';
 
 import me from '/kalebmokua.jpg'
 import logo from '/kaleblogo.png'
@@ -20,7 +20,7 @@ const Portfolio = () => {
       lastScrollY = currentScrollY;
 
       // Update active section
-      const sections = ['hero', 'about', 'experience', 'projects', 'tech-stack', 'contact'];
+      const sections = ['hero', 'about', 'projects', 'tech-stack', 'contact'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -52,7 +52,7 @@ const Portfolio = () => {
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
-              {['About', 'Experience', 'Projects', 'Tech Stack', 'Contact'].map((item) => (
+              {['About', 'Projects', 'Tech Stack', 'Contact'].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(' ', '-')}`}
@@ -98,10 +98,10 @@ const Portfolio = () => {
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
         <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-            I Am Kaleb, A Full Stack Developer
+            I Am Caleb, A Smart Contract Engineer
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-12 animate-fade-in-delay">
-            Crafting Web2 & Web3 Experiences
+            Crafting Web3 Experiences
           </p>
           <div className="flex justify-center space-y-2 md:space-y-0 md:space-x-6 flex-col md:flex-row">
             <a href={`#tech-stack`} className="border-2 border-white text-white px-8 py-3 rounded-full 
@@ -125,13 +125,9 @@ const Portfolio = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-lg text-center">
-              I am a passionate software developer with a knack for building innovative solutions that merge technology with real-world impact. With a solid foundation in IT and software development, I specialize in Web2 and Web3 in decentralized applications (dApps).
-              I have honed my skills in blockchain development, smart contract programming using Solidity, and front-end frameworks like ReactJS and NextJS with TypeScript. My expertise extends to working with tools like Hardhat and platforms like Supabase, allowing me to create scalable and user-friendly applications.
-              </p>
-              <p className="text-lg text-center">
-              When I’m not building software, you’ll often find me exploring new tech and brainstorming ways to solve real-world challenges with code.
-              </p>
+              <h3 className="text-4xl text-center">
+                I'm a software developer specializing in Web3 as a Smart Contract Engineer, currently using solidity.
+              </h3>
             </div>
             <div className="relative">
               <div className="aspect-square rounded-full bg-gradient-to-br from-blue-500 to-purple-500 border border-teal-700">
@@ -147,7 +143,7 @@ const Portfolio = () => {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="h-auto flex items-center justify-center">
+      {/* <section id="experience" className="h-auto flex items-center justify-center">
         <div className="max-w-4xl mx-auto px-4 py-10">
           <h2 className="text-4xl font-bold text-center mb-12 relative dark:text-teal-600 p-1">
             Experience
@@ -164,7 +160,7 @@ const Portfolio = () => {
             }
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Projects Section */}
       <section id="projects" className="h-auto flex items-center justify-center">
@@ -178,13 +174,6 @@ const Portfolio = () => {
                 transition-all duration-300 hover:shadow-xl">
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
                 <p className="text-gray-400 mb-4 line-clamp-5">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map((tech, techIndex) => (
-                    <span key={techIndex} className="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
                 <a href={project.link} target="_blank" className="flex items-center text-blue-400 hover:text-blue-300">
                   View Project <ExternalLink size={16} className="ml-1" />
                 </a>
@@ -205,13 +194,9 @@ const Portfolio = () => {
                 transition-all duration-300 hover:shadow-xl">
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
                 <p className="text-gray-400 mb-4 line-clamp-5">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map((tech, techIndex) => (
-                    <span key={techIndex} className="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+                <a href={project.link} target="_blank" className="flex items-center text-blue-400 hover:text-blue-300">
+                  View Project <ExternalLink size={16} className="ml-1" />
+                </a>
               </div>
             ))}
           </div>
@@ -250,7 +235,7 @@ const Portfolio = () => {
         <div className="max-w-4xl mx-auto px-4 py-20 text-center">
           <h2 className="text-4xl font-bold mb-8">Let's Get in Touch</h2>
           <p className="text-xl text-white/90 mb-12">
-            I'm always interested in hearing about new projects and opportunities.
+            I'm always open to collaborating on different projects.
           </p>
           <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
             <a href="mailto:kalebmokua@gmail.com" 
